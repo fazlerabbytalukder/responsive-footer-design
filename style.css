@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* utilities parts */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container{
+    padding: 50px;
+    background-color: black;
+}
+
+
+.footer-elements{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+}
+
+hr{
+    margin:20px 0;
+    border: 1px solid white;
+}
+
+.button{
+    background-color: black;
+    border: 1.5px solid white;
+    color: white;
+    padding: 5px 20px;
+}
+
+.button>i{
+    color: white;
+}
+
+
+/* left footer designs */
+
+.title-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-social-icon i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.f-title h1 span{
+    background-color: white;
+    color: black;
+    padding: 2px;
+}
+
+.content-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.c-heading{
+    margin-bottom: 20px;
+}
+
+.properties{
+    margin-bottom: 20px;
+}
+
+.properties>h3{
+    margin-bottom: 10px;
+}
+
+.properties>p{
+    color: gray;
+}
+
+.content-right h3{
+    margin-bottom: 30px;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mob-num p>i{
+    margin-right: 10px;
+}
+
+.gmail p>i{
+    margin-right: 10px;
+}
+
+
+/* right footer designs */
+
+.footer-right{
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.footer-right h1{
+    margin-bottom: 15px;
+}
+
+.footer-right input{
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 7px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.form-names{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.f-l-name{
+    width: 100%;
+}
+
+.form-names>p{
+    margin-right: 5px;
+}
+
+.footer-right textarea{
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 8px 7px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+/* meadia query */
+
+@media only screen and (max-width: 688px){
+    .footer-elements{
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 0;
+    }
+
+    .footer-left{
+        margin-bottom: 60px;
+    }
+}
